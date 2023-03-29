@@ -27,11 +27,11 @@ const getRandom = () => {
 
 const printOnScreen = (data) => {
   console.log(cardArea);
-  cardArea.innerHTML = `<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+  cardArea.innerHTML = `<div class="card text-white bg-primary mb-3" style="max-width: 20rem;min-width: 10rem;">
   <div class="card-header">Pokemon</div>
-  <div class="card-body">
-    <h4 class="card-title">${data.name.toUpperCase()}</h4>
-    <img src="${imageUrl}" >
+  <div class="card-body d-flex justify-content-center flex-column">
+    <h4 class="card-title d-flex justify-content-center">${data.name.toUpperCase()}</h4>
+    <img class="d-flex justify-content-center" src="${imageUrl}" >
   </div>
 </div>`;
 };
