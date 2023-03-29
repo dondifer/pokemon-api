@@ -22,7 +22,7 @@ const getPokeData = async (id) => {
 };
 
 const getRandom = () => {
-  getPokeData(aleatorio(0, total_pokemons));
+  getPokeData(aleatorio(1, total_pokemons));
 };
 
 const printOnScreen = (data) => {
